@@ -1,0 +1,94 @@
+:root{
+
+  --text-color : black;
+  --bg-color : rgb(209, 198, 198);
+  --bg-form : white;
+  --bg-img : url("./Components/images/bg-light.jpg")
+}
+
+[data-theme='dark']{
+
+  --text-color : white;
+  --bg-color : black;
+  --bg-form : rgb(37, 34, 34);
+  --bg-img : url("./Components/images/bg-dark.jpg")
+}
+
+.App{
+  background-color: var(--bg-color);
+  color:var(--text-color);
+  background-image: var(--bg-img);
+  background-size: 100% 32%;
+  transition: all .4s ease-in-out;
+  height: 100vh;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  padding-top: 60px;
+
+}
+
+button{
+  background-color: transparent;
+  border: none;
+}
+
+button :hover{
+  cursor: pointer;
+}
+
+.container{
+  width:40vw;
+ 
+}
+
+header{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+ 
+
+}
+
+.form{
+  background-color: var(--bg-form);
+  color:var(--text-color);
+  
+}
+
+input[type=text]{
+  color:var(--text-color);
+  background-color: var(--bg-form);
+width:96%;
+padding: 6px;
+margin: 0;
+ 
+ 
+  
+}
+
+.submit {
+  display: none;
+}
+
+ul{
+  background-color: var(--bg-form);
+  list-style-type:none;
+  padding: 0;
+
+
+}
+li{
+  border-bottom:1px solid  rgb(230, 217, 217);
+}
+.crossed{
+  text-decoration: line-through;
+}
+
+.uncrossed{
+  text-decoration: none;
+}
+
+li:hover{
+  cursor:pointer;
+}
